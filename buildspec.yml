@@ -17,4 +17,3 @@ artifacts:
     - '.next/**/*'
     - 'package.json'
     - 'public/**/*'
-    - 'node_modules/**/*'
