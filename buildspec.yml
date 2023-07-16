@@ -1,7 +1,6 @@
 version: 0.2
 env:
   variables:
-    NODE_ENV: "preprod"
 phases:
   pre_build:
     commands:
@@ -16,4 +15,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - '**/*'
+    - '.next/**/*'
+    - 'package.json'
