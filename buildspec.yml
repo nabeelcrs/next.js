@@ -1,0 +1,19 @@
+version: 0.2
+env:
+  variables:
+    NODE_ENV: "preprod"
+phases:
+  pre_build:
+    commands:
+      - echo Installing dependencies
+      - npm install
+  build:
+    commands:
+      - echo Building nextjs app
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
